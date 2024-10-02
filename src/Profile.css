@@ -1,0 +1,132 @@
+/* src/Profile.css */
+body {
+  background-color: #333; /* Dark background for the page */
+  color: #f4f4f9; /* Light text color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Light background for profile container */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 24px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.profile-tagline {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+.profile-bio {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.profile-contact {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profile-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.profile-contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.profile-contact a:hover {
+  text-decoration: underline;
+}
+
+.profile-social-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profile-social-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.profile-social-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-skills,
+.profile-hobbies,
+.profile-experience {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.profile-skills h2,
+.profile-hobbies h2,
+.profile-experience h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #007bff;
+  text-align: center;
+}
+
+.profile-skills ul,
+.profile-hobbies ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.profile-skills li,
+.profile-hobbies li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-experience .experience-item {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.profile-experience h3 {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.profile-experience p {
+  font-size: 14px;
+  color: #666;
+}

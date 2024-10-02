@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="https://placeholder.pics/svg/120x50" alt="placeholder-logo">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#picker">Picker</a></li>
+                <li><a href="#timer">Timer</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Counter Section -->
+        <section id="counter" class="section">
+            <div class="container">
+                <h1>Counter</h1>
+                <span id="value">0</span>
+                <div class="button-container">
+                    <button class="btn decreaseFive">Decrease -5</button>
+                    <button class="btn decrease">Decrease</button>
+                    <button class="btn reset">Reset</button>
+                    <button class="btn random">Random</button>
+                    <button class="btn increase">Increase</button>
+                    <button class="btn increaseFive">Increase 5</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Picker Section -->
+        <section id="picker" class="section">
+            <div class="container">
+                <h2>Background color: <span class="color">#f1f5f8</span></h2>
+                <button class="btn btn-hero" id="btn">Click Me!</button>
+            </div>
+        </section>
+
+        <!-- Timer Section -->
+        <section id="timer" class="section">
+            <div class="container">
+                <h1>Countdown Timer</h1>
+                <span id="timer-display">30</span>
+                <div class="button-container">
+                    <button id="start-button" class="btn">Start Timer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
