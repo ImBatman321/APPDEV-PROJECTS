@@ -1,10 +1,8 @@
 export default function Footer(){
-    return (
-        <>
+    return(
+        <footer>
             <hr />
-            <p style={{ textAlign: 'center' }}>
-                &copy; {new Date().getFullYear()} My Other Food Website || Written By: John Rey Eleng
-            </p>
-        </>
+            <p>&copy; {new Date().getFullYear} My Games Website || Written By: John Rey Eleng</p>
+        </footer>
     )
 }
