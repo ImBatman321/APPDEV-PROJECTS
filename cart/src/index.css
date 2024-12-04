@@ -1,0 +1,96 @@
+/* Global Styles */
+:root {
+  --font-primary: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --primary-bg: #242424;
+  --secondary-bg: #3a3a3a;
+  --highlight-color: #646cff;
+  --highlight-color-hover: #535bf2;
+  --text-color-light: rgba(255, 255, 255, 0.87);
+  --text-color-dark: #e0e0e0;
+  --button-bg: linear-gradient(135deg, #646cff, #61dafb);
+  --button-hover-bg: linear-gradient(135deg, #535bf2, #4fb3f7);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--primary-bg);
+  color: var(--text-color-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+p, li {
+  font-family: var(--font-secondary);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  font-weight: 500;
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+
+a:hover {
+  color: var(--highlight-color-hover);
+}
+
+/* Button Styling */
+button {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--button-hover-bg);
+  transform: translateY(-4px);
+}
+
+button:active {
+  background: var(--highlight-color);
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: 3px solid var(--highlight-color);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}

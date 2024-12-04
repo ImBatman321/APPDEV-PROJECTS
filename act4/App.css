@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #121212, #1c1c1c);
+  color: #e0e0e0;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: #00f4f7;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+  color: #4aff87;  /* Neon Green */
+}
+
+h1, h2 {
+  text-align: center;
+  color: #00f4f7;
+  margin: 80px 0 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.game-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.game-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.game-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #00f4f7;
+}
+
+.game-card p {
+  font-size: 14px;
+  color: #e0e0e0;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.game-card p:hover {
+  color: #4aff87;  /* Neon Green */
+}
+
+.about-section {
+  background-color: #1a1a1a;
+  padding: 40px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  color: #e0e0e0;
+}
+
+.about-section h2 {
+  color: #00f4f7;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.6;
+}

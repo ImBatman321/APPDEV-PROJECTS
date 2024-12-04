@@ -1,0 +1,152 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2, h3, h4 {
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.review-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 150px;
+  resize: vertical;
+}
+
+.review-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.review-container .reviews-list {
+  margin-top: 20px;
+}
+
+.review-container .review-item {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-container .review-item p {
+  margin: 5px 0;
+}
+
+.review-container .review-item span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.review-container .review-item button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #f44336;
+  font-size: 14px;
+}
+
+.review-container .review-item button:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .login-container, .review-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .review-container .review-item {
+    padding: 10px;
+  }
+
+  .review-container textarea {
+    font-size: 14px;
+  }
+}
